@@ -66,8 +66,7 @@ java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE subsampled_R1.fastq.gz subs
 
 salloc --mem=10G --time=1:00:00 --cpus-per-task=2
 module load trimmomatic 
-time java -jar \
-$EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 2 subsampled_R1.fastq.gz subsampled_R2.fastq.gz subsampled_R1.trim.fastq.gz R1_un.fastq.gz subsampled_R2.trim.fastq.gz R2_un.fastq.gz SLIDINGWINDOW:3:20 MINLEN:50 
+time java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 2 subsampled_R1.fastq.gz subsampled_R2.fastq.gz subsampled_R1.trim.fastq.gz R1_un.fastq.gz subsampled_R2.trim.fastq.gz R2_un.fastq.gz SLIDINGWINDOW:3:20 MINLEN:50 
 
 ## Indexing the reference genome
 cd ~/scratch/omics_workshop/input_data
