@@ -1,5 +1,8 @@
 # If needed, download the metadata from here: https://www.ncbi.nlm.nih.gov/Traces/study/?query_key=2&WebEnv=MCID_691e0e098ec75fd32c2b02c2&o=acc_s%3Aa
 
+# unzip fastq.tar.gz files. Run this in the ~/scratch/omics_workshop/input_data/raw_data/raw_data_02 directory:
+for f in *.fastq.tar.gz; do tar -xvzf "$f"; done`
+
 ## Transfer Metadata
 
 # Windows
